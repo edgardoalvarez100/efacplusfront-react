@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Front from '../layouts/theme-1/Front'
 
@@ -11,54 +10,54 @@ const Inicio = () => {
                 <div className="row py-5">
                     <div className="col  p-5 mb-4 bg-light rounded-3">
                         <div className="jumbotron">
-                            <h1 className="display-5 fw-bold">Facturación mas facil</h1>
+                            <h1 className="display-5 fw-bold">Realiza Facturas fácilmente!</h1>
 
-                            <p className='col-md-8 fs-4'>Hemos desarrollado este sistema para crear facturas y cuentas de cobro mas facil, totalmente gratis. Puedes empezar probando el sistema registrate.</p>
-                            <Link className="btn btn-primary btn-lg" to="/" role="button">Learn more</Link>
+                            <p className='col-md-8 fs-4'>
+                                Crea tus facturas y cuentas de cobro muy fácil, exportarlas y envíalas, no más documentos extraviados
+                                o información de tus clientes que no sabes donde quedó!</p>
+                            <Link className="btn btn-primary btn-lg" to="/registrar" role="button">Crear mi cuenta</Link>
                         </div>
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col">
-                        <Card >
-                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
-                            <Card.Body>
-                                <Card.Title>Diseños amigables</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant='primary'>Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-
-                    <div className="col">
-                        <Card >
-                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
-                            <Card.Body>
-                                <Card.Title>Envios por Correo</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant='primary'>Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                    <div className="col">
-                        <Card >
-                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
-                            <Card.Body>
-                                <Card.Title>Pagos en linea</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant='primary'>Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
+                <div className="row" id='caracteristicas' data-bs-spy="scroll">
+                    <div className="container px-4 py-5" id="featured-3">
+                        <h2 className="pb-2 border-bottom">Caracteristicas</h2>
+                        <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                            <div className="feature col">
+                                <div className="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#collection"></use></svg>
+                                </div>
+                                <h2>Diseño amigable</h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a href="/" className="icon-link d-inline-flex align-items-center">
+                                    Call to action
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                            <div className="feature col">
+                                <div className="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#people-circle"></use></svg>
+                                </div>
+                                <h2>Facturas/Cuentas de cobro</h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a href="/" className="icon-link d-inline-flex align-items-center">
+                                    Call to action
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                            <div className="feature col">
+                                <div className="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3">
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#toggles2"></use></svg>
+                                </div>
+                                <h2>Pagos en Linea</h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a href="/" className="icon-link d-inline-flex align-items-center">
+                                    Call to action
+                                    <svg className="bi" width="1em" height="1em"><use xlinkHref="#chevron-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
