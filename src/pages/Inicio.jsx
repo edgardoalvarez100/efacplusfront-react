@@ -7,25 +7,23 @@ const Inicio = () => {
     return (
         <>
             <div className='container'>
-                <div className="row">
-                    <div className="col py-4">
+                <div className="row py-5">
+                    <div className="col  p-5 mb-4 bg-light rounded-3">
                         <div className="jumbotron">
-                            <h1 className="display-4">Hello, world!</h1>
-                            <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <hr className="my-4" />
-                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                            <h1 className="display-5 fw-bold">Facturación mas facil</h1>
+
+                            <p className='col-md-8 fs-4'>Hemos desarrollado este sistema para crear facturas y cuentas de cobro mas facil, totalmente gratis. Puedes empezar probando el sistema registrate.</p>
                             <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="row">
                     <div className="col">
                         <Card >
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Diseños amigables</Card.Title>
                                 <Card.Text>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
@@ -37,9 +35,9 @@ const Inicio = () => {
 
                     <div className="col">
                         <Card >
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Envios por Correo</Card.Title>
                                 <Card.Text>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
@@ -50,9 +48,9 @@ const Inicio = () => {
                     </div>
                     <div className="col">
                         <Card >
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Img variant="top" src="https://via.placeholder.com/1920x1080" />
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
+                                <Card.Title>Pagos en linea</Card.Title>
                                 <Card.Text>
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
@@ -61,7 +59,6 @@ const Inicio = () => {
                             </Card.Body>
                         </Card>
                     </div>
-
                 </div>
 
             </div>
