@@ -1,11 +1,12 @@
 
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
-
+import { Link } from 'react-router-dom'
+import Front from '../layouts/theme-1/Front'
 
 const Inicio = () => {
     return (
-        <>
+        <Front >
             <div className='container'>
                 <div className="row py-5">
                     <div className="col  p-5 mb-4 bg-light rounded-3">
@@ -13,7 +14,7 @@ const Inicio = () => {
                             <h1 className="display-5 fw-bold">Facturación mas facil</h1>
 
                             <p className='col-md-8 fs-4'>Hemos desarrollado este sistema para crear facturas y cuentas de cobro mas facil, totalmente gratis. Puedes empezar probando el sistema registrate.</p>
-                            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                            <Link className="btn btn-primary btn-lg" to="/" role="button">Learn more</Link>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,7 @@ const Inicio = () => {
                 </div>
 
             </div>
-        </>
+        </ Front>
     )
 }
 

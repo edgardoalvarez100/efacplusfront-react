@@ -1,14 +1,9 @@
 import React from 'react';
 import { Navbar, Container, Nav, } from 'react-bootstrap'
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const NavbarLayout = () => {
     return (
         <>
-            < Routes>
-                <Route path='/' />
-
-
-            </Routes>
             <Navbar bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand >EfacPlus</Navbar.Brand>
@@ -19,7 +14,6 @@ const NavbarLayout = () => {
                     </Nav>
                 </Container>
             </Navbar>
-
         </>
     )
 }

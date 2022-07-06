@@ -1,16 +1,16 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Inicio from '../../pages/Inicio'
+
+
+import { Footer } from './Footer'
 import NavbarLayout from './NavbarLayout'
 
-const Front = () => {
+
+const Front = ({ children }) => {
     return (
         <>
             <NavbarLayout />
-            < Routes>
-                <Route path='/' element={<Inicio />} />
-            </Routes>
-
+            {children}
+            <Footer />
         </>
     )
 }

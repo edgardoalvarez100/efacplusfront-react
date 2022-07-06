@@ -1,8 +1,15 @@
 import React from "react";
-import Front from "./layouts/theme-1/Front";
+import Inicio from "./pages/Inicio";
+import Login from "./pages/Login";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
-  return <Front />;
+  return (
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  );
 };
 
 export default App;
