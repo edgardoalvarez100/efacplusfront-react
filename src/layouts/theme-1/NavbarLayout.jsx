@@ -20,7 +20,7 @@ const NavbarLayout = () => {
                         <li><a href="#caracteristicas" className="nav-link px-2 link-dark">Caracteristicas</a></li>
                         {/* <li><Link to="/" className="nav-link px-2 link-dark">Precios</Link></li> */}
                         {/* <li><Link to="/" className="nav-link px-2 link-dark">FAQs</Link></li> */}
-                        {/* <li><Link to="/" className="nav-link px-2 link-dark">Acerca</Link></li> */}
+                        <li><Link to="/contacto" className="nav-link px-2 link-dark">Contacto</Link></li>
                     </ul>
 
                     <div className="col-md-3 text-end">
