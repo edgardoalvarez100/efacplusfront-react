@@ -5,6 +5,8 @@ import axios from 'axios'
 
 export const Registrar = () => {
     const [state, setState] = useState({ nombres: '', apellidos: '', telefono: '', email: '', password: '' });
+    const [errors, setErrors] = useState(null);
+    const [registrado, setRegistrado] = useState(false);
 
     const inputNombre = (ev) => {
         const nuevoNombre = { ...state, nombres: ev.target.value };
@@ -33,8 +35,6 @@ export const Registrar = () => {
     const registrarOnsubmit = async (ev) => {
         ev.preventDefault();
 
-
-
         try {
             await axios.post("https://node.edgardoalvarez.com/api/usuario", {
                 nombres: state.nombres,
@@ -42,12 +42,17 @@ export const Registrar = () => {
                 telefono: state.telefono,
                 email: state.email,
                 password: state.password
-            })
+            });
+
+            setRegistrado(true);
+
         } catch (error) {
             console.log(error)
+            setErrors(error.message);
         }
 
     }
+
 
     return (
         <div className='loginmain'>
@@ -58,6 +63,12 @@ export const Registrar = () => {
                     </Link>
 
                     <h1 className="h3 mb-3 fw-normal">Crear mi cuenta</h1>
+                    {
+                        errors != null && <div className="alert alert-danger" role="alert">
+                            {errors}
+                        </div>
+                    }
+
 
                     <div className="form-floating">
                         <input type="text" className="form-control" id="nombres" placeholder="Nombres" required onChange={inputNombre} />
